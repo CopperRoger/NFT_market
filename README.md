@@ -24,3 +24,18 @@ Before running the project, ensure you have the following installed:
 - *Aptos CLI*: To deploy and interact with the smart contracts.
 - *Move SDK*: To develop and deploy the smart contracts.
 - *Node.js and npm*: To manage and run the TypeScript front-end.
+
+## Deploy the Smart Contract
+To deploy the smart contract:
+
+Install Aptos CLI.
+
+Update the Move.toml file with your wallet address:
+
+aptos init
+Add your Account addr here for Deployment
+marketplace_addr = '0x988e36ebe7fcb4c7cc4266f7c53850c2010b09bfb843935cf196f530ec2e1153'
+Compile and publish the contract:
+
+aptos move compile
+aptos move publish
